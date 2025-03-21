@@ -1,4 +1,4 @@
-package com.example;
+/* package com.example;
 import java.util.Calendar;
 
 public class DatepickerTest {
@@ -22,4 +22,4 @@ public class DatepickerTest {
         currentMonth = cal.get(Calendar.MONTH)+1;
         currentYear = cal.get(Calendar.YEAR);
     }
-}
+} */
