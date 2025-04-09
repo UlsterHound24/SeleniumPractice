@@ -1,1 +1,2 @@
-com\selenium\framework\Main.class
+pages/LoginPage.class
+base/BaseTest.class
