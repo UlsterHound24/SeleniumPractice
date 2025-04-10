@@ -1,4 +1,4 @@
-base\BaseTest.class
-utils\ExtentReportManager.class
-utils\Log.class
-pages\LoginPage.class
+utils/Log.class
+utils/ExtentReportManager.class
+pages/LoginPage.class
+base/BaseTest.class

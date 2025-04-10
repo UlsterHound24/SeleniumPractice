@@ -22,11 +22,14 @@ public class LoginTest extends BaseTest {
         test.info("Navigated to Login Page");
 
         Log.info("Adding credentials");
+        
         test.info("Adding credentials");
+        
         loginPage.enterUsername("admin@yourstore.com");
         loginPage.enterPassword("admin");
         test.info("Clicking on Login button");
         loginPage.clickLogin();
+        
         test.info("Entered credentials and clicked Login");
         
         Log.info("Verifying page title...");
