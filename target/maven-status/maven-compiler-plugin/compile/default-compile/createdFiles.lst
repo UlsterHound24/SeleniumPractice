@@ -1,2 +1,3 @@
-pages/LoginPage.class
-base/BaseTest.class
+base\BaseTest.class
+utils\Log.class
+pages\LoginPage.class
