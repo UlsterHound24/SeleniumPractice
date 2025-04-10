@@ -188,12 +188,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testValidLogin')
 data.setCell(0, 2, 'tests.LoginTest')
-data.setCell(0, 3, 664);
+data.setCell(0, 3, 900);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 664 ms</span>
+              <span class="suite-total-time">Total running time: 900 ms</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -220,18 +220,26 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setUpReport</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">266 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testValidLogin</span>
-                <span class="method-start">2713 ms</span>
+                <span class="method-start">3235 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">3384 ms</span>
+                <span class="method-name">tearDown([TestResult name=testValidLogin status=SUCCESS method=LoginTest.testValidLogin()[pri:0, instance:tes...)</span>
+                <span class="method-start">4138 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">teardownReport</span>
+                <span class="method-start">4391 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
