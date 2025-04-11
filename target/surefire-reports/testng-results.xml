@@ -2,35 +2,35 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-11T00:05:43 WIB" name="Surefire suite" finished-at="2025-04-11T00:05:47 WIB" duration-ms="4253">
+  <suite started-at="2025-04-11T09:44:59 WIB" name="Surefire suite" finished-at="2025-04-11T09:45:10 WIB" duration-ms="11557">
     <groups>
     </groups>
-    <test started-at="2025-04-11T00:05:43 WIB" name="Surefire test" finished-at="2025-04-11T00:05:47 WIB" duration-ms="4253">
+    <test started-at="2025-04-11T09:44:59 WIB" name="Surefire test" finished-at="2025-04-11T09:45:10 WIB" duration-ms="11557">
       <class name="tests.LoginTest">
-        <test-method is-config="true" signature="setUpReport()[pri:0, instance:tests.LoginTest@7c0c77c7]" started-at="2025-04-11T00:05:43 WIB" name="setUpReport" finished-at="2025-04-11T00:05:43 WIB" duration-ms="148" status="PASS">
+        <test-method is-config="true" signature="setUpReport()[pri:0, instance:tests.LoginTest@10e92f8f]" started-at="2025-04-11T09:44:59 WIB" name="setUpReport" finished-at="2025-04-11T09:44:59 WIB" duration-ms="219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpReport -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@7c0c77c7]" started-at="2025-04-11T00:05:43 WIB" name="setUp" finished-at="2025-04-11T00:05:46 WIB" duration-ms="3349" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@10e92f8f]" started-at="2025-04-11T09:44:59 WIB" name="setUp" finished-at="2025-04-11T09:45:07 WIB" duration-ms="8430" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testValidLogin()[pri:0, instance:tests.LoginTest@7c0c77c7]" started-at="2025-04-11T00:05:46 WIB" name="testValidLogin" finished-at="2025-04-11T00:05:47 WIB" duration-ms="790" status="PASS">
+        <test-method signature="testValidLogin()[pri:0, instance:tests.LoginTest@10e92f8f]" started-at="2025-04-11T09:45:07 WIB" name="testValidLogin" finished-at="2025-04-11T09:45:10 WIB" duration-ms="2926" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@7c0c77c7]" started-at="2025-04-11T00:05:47 WIB" name="tearDown" finished-at="2025-04-11T00:05:47 WIB" duration-ms="97" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@10e92f8f]" started-at="2025-04-11T09:45:10 WIB" name="tearDown" finished-at="2025-04-11T09:45:10 WIB" duration-ms="174" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=LoginTest.testValidLogin()[pri:0, instance:tests.LoginTest@7c0c77c7] output={null}]]]>
+                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=LoginTest.testValidLogin()[pri:0, instance:tests.LoginTest@10e92f8f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="teardownReport()[pri:0, instance:tests.LoginTest@7c0c77c7]" started-at="2025-04-11T00:05:47 WIB" name="teardownReport" finished-at="2025-04-11T00:05:47 WIB" duration-ms="170" status="PASS">
+        <test-method is-config="true" signature="teardownReport()[pri:0, instance:tests.LoginTest@10e92f8f]" started-at="2025-04-11T09:45:10 WIB" name="teardownReport" finished-at="2025-04-11T09:45:11 WIB" duration-ms="289" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownReport -->
