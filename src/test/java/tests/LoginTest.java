@@ -3,6 +3,7 @@ package tests;
 import java.io.IOException;
 
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
@@ -13,7 +14,7 @@ import utils.Log;
 
 
 public class LoginTest extends BaseTest {
-
+    @DataProvider(name="LoginData")
     public Object[][] getLoginData() throws IOException {
         String filePath = System.getProperty("user.dir") + "/testdata/TestData.xlsx";
         ExcelUtils.loadExcel(filePath, "Sheet1");
@@ -27,32 +28,60 @@ public class LoginTest extends BaseTest {
         ExcelUtils.closeExcel();
         return data;
     }
-
-    @Test
-    public void testValidLogin() {
+    @DataProvider(name="LoginData2")
+    public Object[][] getData() {
+        return new Object[][] {
+            {"user1", "pass1"},
+            {"user2", "pass2"},
+            {"admin@yourstore.com", "admin"}
+        };
+    }
+ 
+    @Test(dataProvider="LoginData2")
+    public void testValidLogin(String username, String password) {
         
         Log.info("Starting login test...");
-        test = ExtentReportManager.createTest("Login Test");
+        test = ExtentReportManager.createTest("Login Test" + username);
         
         test.info("Navigating to URL");
         LoginPage loginPage = new LoginPage(driver);
         
-        test.info("Navigated to Login Page");
 
         Log.info("Adding credentials");
-        
         test.info("Adding credentials");
-        
-        loginPage.enterUsername("admin@yourstore.com");
-        loginPage.enterPassword("admin");
+        loginPage.enterUsername(username);
+        loginPage.enterPassword(password);
         test.info("Clicking on Login button");
         loginPage.clickLogin();
-        
-        test.info("Entered credentials and clicked Login");
-        
+
+        System.out.println("Title of the page is :" + driver.getTitle());
         Log.info("Verifying page title...");
         test.info("Verifying Page Title");
         Assert.assertEquals(driver.getTitle(), "Just a moment...");
+        
         test.pass("Login Successful");
     }
+
+/*     public void testLoginWithInvalidCredentials() {
+
+        Log.info("Starting login test...");
+        test = ExtentReportManager.createTest("Login Test with Invalid Credentials");
+
+        test.info("Navigating to URL");
+        LoginPage loginPage = new LoginPage(driver);
+
+        Log.info("Adding credentials");
+        test.info("Adding Credentials");
+        loginPage.enterUsername("admin1234@yourstore.com");
+        loginPage.enterPassword("admin123");
+        test.info("Clicking on Login button");
+        loginPage.clickLogin();
+
+        System.out.println("Title of the page is : " + driver.getTitle());
+        Log.info("Verifying page title");
+        test.info("Verifying page title");
+        Assert.assertEquals(driver.getTitle(), "Just a moment...123");
+
+        test.pass("Login Successful");
+    } */
 }
